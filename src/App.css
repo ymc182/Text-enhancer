@@ -1,0 +1,242 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: hsl(210, 36%, 96%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  height: auto;
+  grid-template-rows: 1fr;
+  
+}
+
+
+
+.nav {
+
+  background-color: tan;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+.nav ul {
+  list-style: none; 
+}
+
+.nav-open{
+
+  left: 0;
+
+
+}
+
+.nav-close{
+  left: -320px;
+}
+
+
+.links{
+
+  display: block;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  list-style: none;
+  
+
+}
+
+.links:hover{
+
+  background: hsl(309, 94%, 49%);
+  color: hsl(205 78% 60%);
+  padding-left: 1.75rem;
+
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/* input form */
+
+.input-form{
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-content: center;
+  height: 100vh;
+}
+
+.input-content {
+  /* Style for the input field */
+  width: 100%;
+  height: 50vh;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  resize: none;
+}
+
+.input-tone{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+
+.submit-button{
+  
+  padding: 1rem;
+  background-color: burlywood;
+  margin-top: 2rem;
+
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Gap between columns */
+}
+
+.input-form {
+  grid-column: 1; /* Place in the first column */
+}
+
+.completion {
+  grid-column: 2; /* Place in the second column */
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-content: center;
+  height: 100vh;
+}
+
+/*Login page */
+
+.signIn {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* 100% of the viewport height */
+  flex-direction: column;
+
+}
+
+.signInButton {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  background-color: lightcyan;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.signIn {
+  padding: 2rem 3rem;
+  background-color: blanchedalmond;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+
+
+.signUp {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+
+
+.signInGoogle {
+  width: 40%;
+  height: 3rem;
+  background-color: white;
+  opacity: 30;
+  border-color: grey;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.signInFacebook {
+
+  width: 40%;
+  height: 3rem;
+  background-color: white;
+  opacity: 30;
+  border-color: grey;
+  margin-bottom: 1rem;
+  color: blue;
+ 
+}
+
+.profile-picture{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+/* profile picture in side nav*/
+
+.Avatar {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: outset;
+
+}
+
+.welcome-message{
+
+  vertical-align: middle;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding: 1rem 0.5rem;
+
+}
