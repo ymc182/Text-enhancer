@@ -3,7 +3,7 @@
 
 export const config = {
   firebaseConfig: {
-    apiKey: "AIzaSyBGHLAJS_ALSPYV6CNdbkLOpvClN75va9Y",
+    apiKey: "",
     authDomain: "text-enhancer.firebaseapp.com",
     projectId: "text-enhancer",
     storageBucket: "text-enhancer.appspot.com",
